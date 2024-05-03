@@ -38,6 +38,7 @@
 		color: $color_white;
 	}
 	.current {
+		display: none;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -47,9 +48,18 @@
 		font-size: 18px;
 		line-height: 25.67px;
 	}
+	.show {
+		display: block;
+	}
 }
 @media screen and (max-width: 500px) {
 	.carrousel {
 		height: 255px;
+		>.vector {
+			width: 24px;
+		}
+		p.current {
+			display: none;
+		}
 	}
 }

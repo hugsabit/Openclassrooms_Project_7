@@ -20,7 +20,6 @@
 	>p {
 		@extend %flex-center;
         width: min-content;
-		height: 64px;
 		margin-right: 10px;
 		word-spacing: 100vw;
 		text-align: end;
@@ -42,6 +41,7 @@
 		font-weight: 500;
 		font-size: 36px;
 		line-height: 51px;
+		margin: 3px 0px 5px;
 	}
 	>h2 {
 		font-weight: 500;
@@ -52,7 +52,7 @@
 .logement-descript {
 	@extend %flex-row-wrap-center;
     flex-wrap: wrap;
-	gap: 50px 76px;
+	gap: 20px 76px;
 	margin: 12px auto;
 }
 @media screen and (max-width: 1200px) {
@@ -93,5 +93,13 @@
 	}
 	.rate {
 		margin: 10px;
+		> img {
+			margin: 1px;
+			height: 18px;
+			width: 18px;
+		}
+	}
+	.tag-container {
+		margin: 10px 0;
 	}
 }

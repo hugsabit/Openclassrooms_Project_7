@@ -17,18 +17,18 @@ function Carrousel({ slides }) {
     return (
         <section className='carrousel'>
             {slides.length > 1 && (
-                <img className='vector right' onClick={previewImage} src={VectorRight}>
+                <img className='vector right' onClick={previewImage} src={VectorRight} alt="navigation slides">
                 </img>
             )}
             {slides.length > 1 && (
-                <img className='vector left' onClick={nextImage} src={VectorLeft}>
+                <img className='vector left' onClick={nextImage} src={VectorLeft} alt="navigation slides">
                 </img>
             )}
             {slides.map((image, i) => {
                 return (
                     <div key={i} className={i === current ? 'slide active' : 'slide'}>
                         <img src={image} alt='Slide présentation logement'></img>
-                        <p className="current">{current + 1}/{slides.length}</p>
+                        <p className={slides.length > 1 ? "current show" : "current"}>{current + 1}/{slides.length}</p>
                     </div>
                 )
             })}

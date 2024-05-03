@@ -3,13 +3,16 @@ import Tag from '../tag/tag';
 import Dropdown from '../dropdown/dropdown';
 import Rate from '../rate/rate';
 import datas from '../../data/logements.json'
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import Carrousel from '../carrousel/carrousel';
 
 function LogementContent() {
 
     const {id} = useParams();
     const data = datas.find((dataInfo) => dataInfo.id === id);
+    if (!data) {
+        return <Navigate to='/404' replace/>
+    }
     const TagsConstruct = data.tags.map((name, i) => {
         return (
             <Tag key={i} text={name}></Tag>

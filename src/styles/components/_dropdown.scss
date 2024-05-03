@@ -3,7 +3,6 @@
 	height: min-content;
 	width: 582px;
 	color: $color_white;
-	margin: 15.5px 0px 15.5px;
 	>.title {
 		@extend %flex-row-spb-center;
         position: relative;
@@ -64,7 +63,8 @@
 				line-height: 19px;
 				margin: 5.5px 0 5.46px 11.51px;
 			}
-			>img {
+			>img,
+			img.vector-chevron-up {
 				height: 18.42px;
 				width: 18.42px;
 				margin: 6px 5.58px 5.58px 0;
