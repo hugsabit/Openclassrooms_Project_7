@@ -1,0 +1,19 @@
+
+.gallery {
+	@extend %flex-row-wrap-center;
+    margin: 20px 40px 43px;
+	padding: 26px 20px;
+	background: #F7F7F7;
+	border-radius: 25px;
+	max-width: 1240px;
+	a {
+		text-decoration: none;
+	}
+}
+@media screen and (max-width: 500px) {
+	.gallery {
+		background-color: $background-color_unset;
+		margin: 2px 19px 11px 21px;
+		padding: 0;
+	}
+}

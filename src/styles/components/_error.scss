@@ -1,0 +1,42 @@
+
+.error {
+	@extend %flex-col-center;
+    margin: 129px 0 159px;
+	text-align: center;
+	padding: 0 20px;
+	>img {
+		max-width: 597px;
+		width: 100%;
+		height: auto;
+		margin: 0 0 33px;
+	}
+	>p {
+		@extend %flex-flexend;
+        font-style: normal;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 51px;
+		color: $color_orange;
+		margin: 33px 0 182px;
+	}
+	>a {
+		@extend %flex-flexend;
+        font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 26px;
+		text-decoration-line: underline;
+		color: $color_orange;
+	}
+}
+@media screen and (max-width: 500px) {
+	.error {
+		>img {
+			max-width: 198px;
+		}
+		>p {
+			font-size: 18px;
+			line-height: 26px;
+		}
+	}
+}

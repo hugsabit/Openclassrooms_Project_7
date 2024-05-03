@@ -1,0 +1,17 @@
+
+.tag {
+	@extend %flex-center-center;
+    min-width: 115px;
+	height: 25px;
+	background: #FF6060;
+	border-radius: 10px;
+	margin-right: 5px;
+	>p {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		color: $color_white;
+		padding: 0 10px;
+	}
+}

@@ -1,0 +1,28 @@
+
+.thumb {
+	width: 340px;
+	height: 340px;
+	margin: 30px 30px;
+	border-radius: 10px;
+	>p {
+		@extend %flex-flexend;
+        height: 100%;
+		width: 100%;
+		padding: 20px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 26px;
+		color: $color_white;
+	}
+}
+.thumb-bg-color {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+@media screen and (max-width: 500px) {
+	.thumb {
+		width: 335px;
+		height: 255px;
+		margin: 10px 0;
+	}
+}

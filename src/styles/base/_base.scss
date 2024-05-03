@@ -1,0 +1,10 @@
+
+* {
+	margin: 0;
+	font-family: $font-family_1_sf;
+	box-sizing: border-box;
+}
+#root {
+	@extend %flex-col-spb-center;
+    min-height: 100vh;
+}

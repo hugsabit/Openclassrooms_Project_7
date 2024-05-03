@@ -1,0 +1,30 @@
+
+.footer {
+	@extend %flex-col-center;
+    width: 100%;
+	background-color: $background-color_black;
+	>img {
+		height: 39.44px;
+		width: 122px;
+		margin: 66px 0 14.28px;
+		filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1269%) hue-rotate(269deg) brightness(117%) contrast(100%);
+	}
+	>p {
+		margin: 14.28px 0 29px;
+		font-family: $font-family_1;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 34px;
+		text-align: center;
+		color: $color_white;
+	}
+}
+@media screen and (max-width: 500px) {
+	.footer {
+		>p {
+			font-size: 12px;
+			line-height: 17px;
+		}
+	}
+}
